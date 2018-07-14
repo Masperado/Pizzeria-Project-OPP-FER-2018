@@ -1,0 +1,39 @@
+<div *ngIf="pizza" class="container">
+
+  <div class="text-center">
+    <img class="img-thumbnail" src="{{pizza.pictureUrl}}">
+  </div>
+
+  <ul class="list-group">
+    <li class="list-group-item"><h3><b>Naziv:</b> {{pizza.name}}</h3></li>
+    <li class="list-group-item"><h3><b>Opis:</b> {{pizza.description}}</h3></li>
+    <li class="list-group-item"><h3><b>Cijena:</b> {{pizza.price}}&nbsp;kn</h3></li>
+    <li class="list-group-item"><h3><b>Ocjena:</b>
+      <span *ngIf="pizza.averageGrade">{{pizza.averageGrade}}/5</span>
+      <span *ngIf="!pizza.averageGrade">Pizza još nije ocijenjena</span>
+    </h3></li>
+    <li class="list-group-item"><h3><b>Sastojci:</b>
+      <span *ngFor="let ingredient of pizza.ingredients">{{ingredient.name}}&nbsp;
+    </span></h3></li>
+  </ul>
+  <br>
+  <form class="form-horizontal" (ngSubmit)="order(f)" #f="ngForm" role="form">
+    <div class="form-group">
+      <label for="order" class="col-sm-3 control-label">Količina</label>
+      <div class="col-sm-9">
+        <input type="number" id="order" name="order" placeholder="1" ngModel class="form-control" autofocus>
+      </div>
+      <div class="col-sm-9 col-sm-offset-3">
+        <br>
+        <button type="submit" class="btn btn-success btn-block">Naruči</button>
+      </div>
+
+    </div>
+  </form>
+
+</div>
+<hr>
+
+<app-cart></app-cart>
+
+

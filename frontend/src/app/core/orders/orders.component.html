@@ -1,0 +1,14 @@
+<div class="container">
+  <h2>Trenutne narudžbe</h2>
+  <ul class="list-group">
+    <li *ngFor ="let order of currentOrders" class="list-group-item">{{order.orderDate | date: full}} &nbsp;&nbsp;&nbsp;&nbsp; Ukupna cijena: {{order.price}}kn Status narudžbe: {{order.orderStatus | offerPipe}}<a class="pull-right" href="/orderDetails/{{order.orderId}}"><span class="badge">Detalji narudžbe</span></a></li>
+  </ul>
+</div>
+<div class="container">
+  <h2>Prošle narudžbe</h2>
+  <ul class="list-group">
+    <li *ngFor ="let order of pastOrders" class="list-group-item">Datum: {{order.orderDate | date: full}}&nbsp;&nbsp;&nbsp;&nbsp; Ukupna cijena: {{order.price}}kn Status narudžbe: {{order.orderStatus | offerPipe}}<a class="pull-right" href="/orderDetails/{{order.orderId}}"><span class="badge">Detalji narudžbe</span></a></li>
+  </ul>
+</div>
+
+

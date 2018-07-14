@@ -1,0 +1,11 @@
+<h1 class="modal-title">Pogledajte našu galeriju</h1>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="border border-danger pizza col-xs-1" *ngFor="let picture of gallery">
+      <a href="{{picture}}" target="_blank"><img class="img-thumbnail" src="{{picture}}"></a>
+    </div>
+  </div>
+</div>
+
+

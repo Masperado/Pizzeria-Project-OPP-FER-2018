@@ -1,0 +1,35 @@
+<div *ngIf="order" class="container">
+  <h2>Sadržaj narudžbe</h2>
+  <ul class="list-group">
+    <li *ngFor="let pizza of order.pizzas" class="list-group-item">Naziv:&nbsp;{{pizza.name}} &nbsp;Cijena:&nbsp;{{pizza.price}}kn&nbsp;
+      Količina: {{pizza.quantity}}
+    </li>
+  </ul>
+  <hr>
+  <div *ngIf="order.hasGrade"><h2>Narudžba je ocijenjena</h2></div>
+  <div *ngIf="!order.hasGrade"><h2>Ocijeni narudžbu</h2>
+    <ul class="list-group">
+      <form class="form-horizontal" (ngSubmit)="onGrade(f)" #f="ngForm" role="form">
+        <div *ngFor="let pizza of order.pizzas" class="form-group">
+          <label for="pizza.name" class="col-sm-3 control-label">{{pizza.name}}</label>
+          <div class="col-sm-9">
+            <select id="pizza.name" [(ngModel)]="pizza.grade" name="{{pizza.id}}" class="form-control">
+              <option selected>Izaberite Vašu ocijenu</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-9 col-sm-offset-3">
+            <button type="submit" class="btn btn-primary btn-block">Ocijeni</button>
+          </div>
+        </div>
+      </form>
+    </ul>
+  </div>
+</div>
+

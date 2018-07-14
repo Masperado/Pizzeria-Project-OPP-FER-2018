@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="645.4488095238097" y="257.0">hr.fer.opp.pizzeriasystem.controllers.GradeController</node>
+    <node x="935.1154761904763" y="0.0">hr.fer.opp.pizzeriasystem.services.OrderService</node>
+    <node x="401.0" y="410.0">hr.fer.opp.pizzeriasystem.controllers.ReportController</node>
+    <node x="4.0" y="331.0">hr.fer.opp.pizzeriasystem.services.NotificationService</node>
+    <node x="0.0" y="484.0">hr.fer.opp.pizzeriasystem.services.UserDetailsServiceImpl</node>
+    <node x="978.5916666666667" y="79.0">hr.fer.opp.pizzeriasystem.services.PizzaOrderService</node>
+    <node x="314.6714285714286" y="257.0">hr.fer.opp.pizzeriasystem.controllers.AdminController</node>
+    <node x="409.0" y="331.0">hr.fer.opp.pizzeriasystem.services.ReportService</node>
+    <node x="940.4488095238097" y="168.0">hr.fer.opp.pizzeriasystem.services.PizzaService</node>
+    <node x="275.74999999999994" y="168.0">hr.fer.opp.pizzeriasystem.controllers.UserController</node>
+    <node x="201.0" y="410.0">hr.fer.opp.pizzeriasystem.controllers.IngredientController</node>
+    <node x="10.5" y="79.0">hr.fer.opp.pizzeriasystem.validators.UserValidator</node>
+    <node x="348.24999999999994" y="79.0">hr.fer.opp.pizzeriasystem.services.LoyaltyProgramService</node>
+    <node x="443.24999999999994" y="168.0">hr.fer.opp.pizzeriasystem.controllers.LoyaltyProgramController</node>
+    <node x="0.0" y="410.0">hr.fer.opp.pizzeriasystem.controllers.EmailSendController</node>
+    <node x="653.4488095238097" y="168.0">hr.fer.opp.pizzeriasystem.services.GradeService</node>
+    <node x="283.74999999999994" y="0.0">hr.fer.opp.pizzeriasystem.services.UserService</node>
+    <node x="900.6988095238097" y="257.0">hr.fer.opp.pizzeriasystem.controllers.PizzaController</node>
+    <node x="148.49999999999994" y="79.0">hr.fer.opp.pizzeriasystem.services.SecurityService</node>
+    <node x="805.5916666666667" y="79.0">hr.fer.opp.pizzeriasystem.controllers.EmployeeController</node>
+    <node x="789.4488095238097" y="168.0">hr.fer.opp.pizzeriasystem.controllers.OrderController</node>
+    <node x="209.0" y="331.0">hr.fer.opp.pizzeriasystem.services.IngredientService</node>
+    <node x="104.74999999999994" y="168.0">hr.fer.opp.pizzeriasystem.services.SecurityServiceImpl</node>
+    <node x="660.5047619047618" y="0.0">hr.fer.opp.pizzeriasystem.services.EmployeeService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.EmployeeController" target="hr.fer.opp.pizzeriasystem.services.EmployeeService">
+      <point x="-38.25" y="-14.5" />
+      <point x="843.8416666666667" y="49.0" />
+      <point x="774.6714285714285" y="49.0" />
+      <point x="45.66666666666663" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.ReportController" target="hr.fer.opp.pizzeriasystem.services.ReportService">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.LoyaltyProgramController" target="hr.fer.opp.pizzeriasystem.services.LoyaltyProgramService">
+      <point x="-46.25" y="-14.5" />
+      <point x="489.49999999999994" y="148.0" />
+      <point x="466.54999999999995" y="148.0" />
+      <point x="33.80000000000001" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.OrderController" target="hr.fer.opp.pizzeriasystem.services.LoyaltyProgramService">
+      <point x="-54.58333333333326" y="-14.5" />
+      <point x="800.3654761904764" y="148.0" />
+      <point x="500.3499999999999" y="148.0" />
+      <point x="67.59999999999997" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.OrderController" target="hr.fer.opp.pizzeriasystem.services.PizzaOrderService">
+      <point x="32.75" y="-14.5" />
+      <point x="887.6988095238097" y="138.0" />
+      <point x="1049.0916666666667" y="138.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.UserController" target="hr.fer.opp.pizzeriasystem.validators.UserValidator">
+      <point x="-49.599999999999966" y="-14.5" />
+      <point x="288.15" y="148.0" />
+      <point x="99.0" y="148.0" />
+      <point x="29.5" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.AdminController" target="hr.fer.opp.pizzeriasystem.validators.UserValidator">
+      <point x="-34.25" y="-14.5" />
+      <point x="348.9214285714286" y="227.0" />
+      <point x="40.0" y="227.0" />
+      <point x="-29.5" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.UserController" target="hr.fer.opp.pizzeriasystem.services.UserService">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.AdminController" target="hr.fer.opp.pizzeriasystem.services.LoyaltyProgramService">
+      <point x="11.416666666666686" y="-14.5" />
+      <point x="394.5880952380953" y="217.0" />
+      <point x="432.74999999999994" y="217.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.OrderController" target="hr.fer.opp.pizzeriasystem.services.OrderService">
+      <point x="54.58333333333337" y="-14.5" />
+      <point x="909.5321428571431" y="148.0" />
+      <point x="1130.0916666666667" y="148.0" />
+      <point x="1130.0916666666667" y="59.0" />
+      <point x="1021.3654761904763" y="59.0" />
+      <point x="28.75" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.OrderController" target="hr.fer.opp.pizzeriasystem.services.EmployeeService">
+      <point x="-10.916666666666629" y="-14.5" />
+      <point x="844.0321428571431" y="128.0" />
+      <point x="795.0916666666667" y="128.0" />
+      <point x="795.0916666666667" y="59.0" />
+      <point x="729.0047619047618" y="59.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.LoyaltyProgramController" target="hr.fer.opp.pizzeriasystem.services.UserService">
+      <point x="46.25" y="-14.5" />
+      <point x="582.0" y="59.0" />
+      <point x="359.3499999999999" y="59.0" />
+      <point x="21.599999999999966" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.AdminController" target="hr.fer.opp.pizzeriasystem.services.UserService">
+      <point x="-57.083333333333314" y="-14.5" />
+      <point x="326.0880952380953" y="237.0" />
+      <point x="0.0" y="237.0" />
+      <point x="0.0" y="49.0" />
+      <point x="294.54999999999995" y="49.0" />
+      <point x="-43.19999999999999" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.EmployeeController" target="hr.fer.opp.pizzeriasystem.services.OrderService">
+      <point x="38.25" y="-14.5" />
+      <point x="920.3416666666667" y="59.0" />
+      <point x="963.8654761904763" y="59.0" />
+      <point x="-28.75" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.PizzaController" target="hr.fer.opp.pizzeriasystem.services.PizzaService">
+      <point x="31.75" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.AdminController" target="hr.fer.opp.pizzeriasystem.services.EmployeeService">
+      <point x="34.25" y="-14.5" />
+      <point x="417.4214285714286" y="227.0" />
+      <point x="638.75" y="227.0" />
+      <point x="638.75" y="59.0" />
+      <point x="683.3380952380952" y="59.0" />
+      <point x="-45.66666666666663" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.UserController" target="hr.fer.opp.pizzeriasystem.services.SecurityService">
+      <point x="-24.80000000000001" y="-14.5" />
+      <point x="312.94999999999993" y="138.0" />
+      <point x="243.74999999999994" y="138.0" />
+      <point x="31.75" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.UserController" target="hr.fer.opp.pizzeriasystem.services.LoyaltyProgramService">
+      <point x="24.80000000000001" y="-14.5" />
+      <point x="362.54999999999995" y="148.0" />
+      <point x="365.15" y="148.0" />
+      <point x="-67.59999999999997" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.EmailSendController" target="hr.fer.opp.pizzeriasystem.services.NotificationService">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.OrderController" target="hr.fer.opp.pizzeriasystem.services.UserService">
+      <point x="-32.75" y="-14.5" />
+      <point x="822.1988095238097" y="138.0" />
+      <point x="662.0214285714285" y="138.0" />
+      <point x="662.0214285714285" y="49.0" />
+      <point x="380.94999999999993" y="49.0" />
+      <point x="43.19999999999999" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.SecurityServiceImpl" target="hr.fer.opp.pizzeriasystem.services.SecurityService">
+      <point x="0.0" y="-14.5" />
+      <point x="-31.75" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.OrderController" target="hr.fer.opp.pizzeriasystem.controllers.EmployeeController">
+      <point x="10.916666666666629" y="-14.5" />
+      <point x="865.8654761904763" y="148.0" />
+      <point x="882.0916666666667" y="148.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.AdminController" target="hr.fer.opp.pizzeriasystem.controllers.UserController">
+      <point x="-11.416666666666686" y="-14.5" />
+      <point x="371.75476190476195" y="217.0" />
+      <point x="337.74999999999994" y="217.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.validators.UserValidator" target="hr.fer.opp.pizzeriasystem.services.UserService">
+      <point x="0.0" y="-14.5" />
+      <point x="69.5" y="59.0" />
+      <point x="316.1499999999999" y="59.0" />
+      <point x="-21.600000000000023" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.AdminController" target="hr.fer.opp.pizzeriasystem.services.GradeService">
+      <point x="57.083333333333314" y="-14.5" />
+      <point x="440.25476190476195" y="237.0" />
+      <point x="672.7821428571431" y="237.0" />
+      <point x="-38.66666666666663" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.PizzaController" target="hr.fer.opp.pizzeriasystem.services.GradeService">
+      <point x="-31.75" y="-14.5" />
+      <point x="932.4488095238097" y="237.0" />
+      <point x="750.1154761904763" y="237.0" />
+      <point x="38.66666666666663" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.GradeController" target="hr.fer.opp.pizzeriasystem.services.GradeService">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.controllers.IngredientController" target="hr.fer.opp.pizzeriasystem.services.IngredientService">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9" x="991.8571428571428" y="402.0357142857142" />
+  <SelectedNodes>
+    <node>hr.fer.opp.pizzeriasystem.controllers.AdminController</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

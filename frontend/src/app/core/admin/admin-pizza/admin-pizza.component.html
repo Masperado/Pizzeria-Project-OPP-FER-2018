@@ -1,0 +1,60 @@
+<h1 *ngIf="pizzaRegistered">Kreirali ste pizzu!</h1>
+<h1 *ngIf="pizzaEdited">Uredili ste pizzu!</h1>
+
+<div class="container">
+  <form class="form-horizontal" (ngSubmit)="addPizza(f)" #f="ngForm" role="form">
+    <h2 *ngIf="!editing">Kreiraj pizzu</h2>
+    <h2 *ngIf="editing">Uredi pizzu</h2>
+    <div class="form-group row">
+      <label for="firstName" class="col-sm-3 control-label">Naziv</label>
+      <div class="col-sm-9">
+        <input type="text" id="firstName" name="name" ngModel placeholder="" class="form-control" autofocus>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="firstName" class="col-sm-3 control-label">Cijena</label>
+      <div class="col-sm-9">
+        <input type="number" id="lastName" name="price" placeholder="" ngModel class="form-control" autofocus>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="firstName" class="col-sm-3 control-label">Url slike</label>
+      <div class="col-sm-9">
+        <input type="text" id="username" name="pictureUrl" ngModel placeholder="" class="form-control" autofocus>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="password" class="col-sm-3 control-label">Opis</label>
+      <div class="col-sm-9">
+        <input type="text" id="password" name="description" ngModel placeholder="" class="form-control">
+      </div>
+    </div>
+    <div class="text-center control-label"><b>Odaberite sastojke: </b></div>
+    <div class="form-group row">
+      <div *ngFor="let ingredient of ingredients" class="checkbox col-sm-3">
+        <label><input type="checkbox" ngModel name="{{ingredient.id}}" value=""> {{ingredient.name}}</label>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-danger btn-block" (click)="create(f)">Odustani</button>
+      </div>
+      <div class="col-sm-9">
+        <button *ngIf="!editing" type="submit" class="btn btn-primary btn-block">Dodaj pizzu</button>
+        <button *ngIf="editing" type="submit" class="btn btn-primary btn-block">Uredi pizzu</button>
+      </div>
+    </div>
+  </form> <!-- /form -->
+</div> <!-- ./container -->
+
+
+<div class="container">
+  <h2>Lista pizza</h2>
+  <ul class="list-group">
+    <li *ngFor="let pizza of pizzaList" class="text-center list-group-item"><h3>Naziv: {{pizza.name}} | Status: {{pizza.pizzaStatus}}</h3>
+      <button class="text-right btn btn-info" (click)="edit(pizza, f)">Uredi pizzu</button>
+      <button class="text-right btn btn-success" (click)="putInOffer(pizza)">Stavi u ponudu</button>
+      <button class="text-right btn btn-danger" (click)="outOfOffer(pizza)">Izbaci iz ponude</button>
+    </li>
+  </ul>
+</div>

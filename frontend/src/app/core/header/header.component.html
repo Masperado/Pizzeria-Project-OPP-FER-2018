@@ -1,0 +1,51 @@
+<nav *ngIf="regularHeader" class="navbar navbar-default sticky">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img class="logo" src="assets/logo.png">    </div>
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link" href="/">Menu</a></li>
+      <li class="nav-item"><a class="nav-link" href="/gallery">Galerija</a></li>
+      <li class="nav-item"><a class="nav-link" href="/info">Info</a></li>
+    </ul>
+    <ul *ngIf="!userLoggedIn" class="nav navbar-right">
+      <li class="nav-item"><a class="nav-link" href="/registration">Registriraj se </a></li>
+      <li class="nav-item"><a class="nav-link" href="/login">&nbsp;Prijavi se</a></li>
+    </ul>
+    <ul *ngIf="userLoggedIn" class="nav navbar-right">
+      <li class="nav-item"><a class="nav-link">Dobro došli {{user.firstName}}</a></li>
+      <li class="nav-item"><a class="nav-link" href="/profile">Uredi profil</a></li>
+      <li class="nav-item"><a class="nav-link" href="/loyalty">Program vjernosti</a></li>
+      <li class="nav-item"><a class="nav-link" href="/orders">Moje narudžbe</a></li>
+      <li class="nav-item"><a class="nav-link" href="#" (click)="logout()"> Odjavi se</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav *ngIf="employeeHeader" class="navbar navbar-default sticky">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img class="logo" src="assets/logo.png">    </div>
+    <ul *ngIf="userLoggedIn" class="nav navbar-right">
+      <li class="nav-item"><a class="nav-link">Dobro došli {{user.firstName}}</a></li>
+      <li class="nav-item"><a class="nav-link" href="/employee">Moje narudžbe</a></li>
+      <li class="nav-item"><a class="nav-link" href="/control">Kontrola pizzerie</a></li>
+      <li class="nav-item"><a class="nav-link" href="#" (click)="logout()">Odjavi se</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav *ngIf="adminHeader" class="navbar navbar-default sticky">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img class="logo" src="assets/logo.png">    </div>
+    <ul *ngIf="userLoggedIn" class="nav navbar-right">
+      <li class="nav-item"><a class="nav-link">Dobro došli {{user.firstName}}</a></li>
+      <li class="nav-item"><a class="nav-link" href="/admin">Izvještaji</a></li>
+      <li class="nav-item"><a class="nav-link" href="/adminPizza">Uredi pizze</a></li>
+      <li class="nav-item"><a class="nav-link" href="/adminEmployee">Uredi zaposlenike</a></li>
+      <li class="nav-item"><a class="nav-link" href="/adminUser">Uredi korisnike</a></li>
+      <li class="nav-item"><a class="nav-link" href="/adminLoyalty">Uredi program vjernosti</a></li>
+      <li class="nav-item"><a class="nav-link" href="#" (click)="logout()">Odjavi se</a></li>
+    </ul>
+  </div>
+</nav>

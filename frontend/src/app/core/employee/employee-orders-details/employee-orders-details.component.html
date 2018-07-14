@@ -1,0 +1,14 @@
+<div *ngIf="order" class="container">
+  <h1>Kupac: {{order.userName}}</h1>
+  <h1>Sadržaj narudžbe: {{order.orderStatus | offerPipe}}</h1>
+  <button class="btn btn-primary" (click)="accept()">Prihvati narudžbu</button>
+  <button class="btn btn-info" (click)="deliver()">Dostavi narudžbu</button>
+  <button class="btn btn-success" (click)="paid()">Plaćeno</button>
+  <button class="btn btn-danger" (click)="notPaid()">Neplaćeno</button>
+  <h2>Sadržaj narudžbe</h2>
+  <ul class="list-group">
+    <li *ngFor="let pizza of order.pizzas" class="list-group-item">Naziv:&nbsp;{{pizza.name}} &nbsp;Cijena:&nbsp;{{pizza.price}}kn&nbsp;
+      Količina: {{pizza.quantity}}
+    </li>
+  </ul>
+</div>

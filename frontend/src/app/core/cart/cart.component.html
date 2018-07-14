@@ -1,0 +1,30 @@
+<h1 *ngIf="blockedOrders">Narudžbe su trenutno blokirane! Hvala na razumijevanju :)</h1>
+
+<div *ngIf="currentOrder && currentOrder.pizzas.length>0 && userToken && !orderInProgress" class="container">
+  <h2 class="list-group-item-heading">Košarica: </h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let pizza of currentOrder.pizzas">
+      <div class="text-left">Naziv: {{pizza.name}}&nbsp;Količina: {{pizza.quantity}}&nbsp;Cijena:
+        {{pizza.price*pizza.quantity}} kn
+      </div>
+      <div class="text-right">
+        <button class="btn btn-success" (click)="add(pizza.id)">+</button>
+        <button class="btn btn-default" (click)="remove(pizza.id)">-</button>
+        <button class="btn btn-danger" (click)="removeAll(pizza.id)">x</button>
+      </div>
+    </li>
+    <button class="naruci btn btn-success list-group-item" (click)="order()">Naruči</button>
+  </ul>
+</div>
+
+<div *ngIf="currentOrder && userToken && orderInProgress" class="container">
+  <h2 class="list-group-item-heading">Vaša narudžba: </h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let pizza of currentOrder.pizzas">
+      <div class="text-left">Naziv: {{pizza.name}}&nbsp;Količina: {{pizza.quantity}}&nbsp;Cijena:
+        {{pizza.price*pizza.quantity}} kn
+      </div>
+    </li>
+    <h1 class="text-center list-group-item">Status narudžbe: {{currentOrderStatus | offerPipe}}</h1>
+  </ul>
+</div>

@@ -1,0 +1,14 @@
+<app-cart></app-cart>
+
+<h1 class="modal-title">Menu</h1>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="border pizza col-xs-1" *ngFor="let pizza of pizzaList">
+      <h3>{{pizza.name}}</h3>
+      <a href="item/{{pizza.id}}"><img class="img-thumbnail" src="{{pizza.pictureUrl}}"></a>
+    </div>
+  </div>
+</div>
+
+

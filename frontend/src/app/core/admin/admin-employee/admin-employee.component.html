@@ -1,0 +1,94 @@
+<h1 *ngIf="employeeRegistered">Kreirali ste zaposlenika!</h1>
+<h1 *ngIf="employeeEdited">Uredili ste zaposlenika!</h1>
+
+<div class="container">
+  <form class="form-horizontal" (ngSubmit)="addEmployee(f)" #f="ngForm" role="form">
+    <h2 *ngIf="formInvalid"><b>{{wrongInput}}</b></h2>
+    <h2 *ngIf="!editing">Kreiraj zaposlenika</h2>
+    <h2 *ngIf="editing">Uredi zaposlenika</h2>
+      <div class="form-group row">
+        <label for="firstName" class="col-sm-3 control-label">Ime</label>
+        <div class="col-sm-9">
+          <input type="text" id="firstName" name="firstName" ngModel placeholder="" class="form-control" autofocus>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="firstName" class="col-sm-3 control-label">Prezime</label>
+        <div class="col-sm-9">
+          <input type="text" id="lastName" name="lastName" placeholder="" ngModel class="form-control" autofocus>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="firstName" class="col-sm-3 control-label">Korisničko ime</label>
+        <div class="col-sm-9">
+          <input type="text" id="username" name="username" ngModel placeholder="" class="form-control" autofocus>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="email" class="col-sm-3 control-label">Email</label>
+        <div class="col-sm-9">
+          <input type="email" id="email" name="email" placeholder="" ngModel  class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="password" class="col-sm-3 control-label">Lozinka</label>
+        <div class="col-sm-9">
+          <input type="password" id="password" name="password" ngModel placeholder="" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="password" class="col-sm-3 control-label">Ponovite lozinku</label>
+        <div class="col-sm-9">
+          <input type="password" id="passwordConfirm" name="passwordConfirm" ngModel placeholder="" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="control-label col-sm-3">Spol</label>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-4">
+              <label class="radio-inline">
+                <input type="radio" id="femaleRadio" name="female" ngModel value="Female">Muško
+              </label>
+            </div>
+            <div class="col-sm-4">
+              <label class="radio-inline">
+                <input type="radio" id="maleRadio" name="male" ngModel value="Male">Žensko
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="firstName" class="col-sm-3 control-label">Adresa</label>
+        <div class="col-sm-9">
+          <input type="text" id="address" name="address" ngModel placeholder="" class="form-control" autofocus>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="firstName" class="col-sm-3 control-label">Broj mobitela</label>
+        <div class="col-sm-9">
+          <input type="text" id="phone" name="phoneNumber" ngModel placeholder="" class="form-control" autofocus>
+        </div>
+      </div>
+    <div class="form-group row">
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-danger btn-block" (click)="create(f)">Odustani</button>
+      </div>
+      <div class="col-sm-9">
+        <button *ngIf="!editing" type="submit" class="btn btn-primary btn-block">Dodaj zaposlenika</button>
+        <button *ngIf="editing" type="submit" class="btn btn-primary btn-block">Uredi zaposlenika</button>
+      </div>
+    </div>
+  </form> <!-- /form -->
+</div> <!-- ./container -->
+
+
+<div class="container">
+  <h2>Lista zaposlenika</h2>
+  <ul class="list-group">
+    <li *ngFor="let employee of employeeList" class="text-center list-group-item"><h3>Ime: {{employee.firstName}} | Prezime: {{employee.lastName}} | Korisničko ime: {{employee.username}}</h3>
+      <button class="text-right btn btn-info" (click)="edit(employee, f)">Uredi zaposlenika</button>
+    </li>
+  </ul>
+</div>

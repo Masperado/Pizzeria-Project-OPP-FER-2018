@@ -1,0 +1,15 @@
+SASTANAK 1: 20.10.2017.
+Prisutni: Silvija Grgić, Marija Frković, Josip Mrđen, Josip Torić, Luka Kudra, Ivan Crnomarković
+Sažetak: Međusobno upoznavanje članova tima i početna analiza zadatka.
+
+SASTANAK 2: 27.10.2017.
+Prisutni: Silvija Grgić, Marija Frković, Josip Mrđen, Josip Torić, Luka Kudra, Ivan Crnomarković
+Sažetak: Podjela izrade dokumentacije projekta među članovima.
+
+SASTANAK 3: 3.11.2017.
+Prisutni: Silvija Grgić, Marija Frković, Josip Mrđen, Josip Torić, Luka Kudra, Ivan Crnomarković
+Sažetak: Dodatna analiza zadatka te podjela tima na dijelove koji će izrađivati backend i frontend.
+
+SASTANAK 4: 10.11.2017.
+Prisutni: Silvija Grgić, Marija Frković, Josip Mrđen, Josip Torić, Luka Kudra, Ivan Crnomarković
+Sažetak: Analiza dosad napravljene dokumentacije. Rasprava o optimalnom modelu za backend projekta.

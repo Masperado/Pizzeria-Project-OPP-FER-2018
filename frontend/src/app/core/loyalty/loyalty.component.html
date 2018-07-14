@@ -1,0 +1,6 @@
+<div *ngIf="loyalty" class="container">
+  <ul><h2>Program vjernosti</h2>
+    <li>Pizza do besplatne: {{loyalty.pizzasRemainingUntilFree}}</li>
+    <li>Ukupno potrebno pizza: {{loyalty.totalPizzasToGetFreeOne}}</li>
+  </ul>
+</div>

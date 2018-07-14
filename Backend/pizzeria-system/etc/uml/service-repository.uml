@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="565.25" y="234.0">hr.fer.opp.pizzeriasystem.services.OrderService</node>
+    <node x="608.0" y="882.0">hr.fer.opp.pizzeriasystem.services.NotificationService</node>
+    <node x="324.24999999999994" y="77.0">hr.fer.opp.pizzeriasystem.repository.ReportRepository</node>
+    <node x="1323.25" y="507.0">hr.fer.opp.pizzeriasystem.services.UserDetailsServiceImpl</node>
+    <node x="0.0" y="333.0">hr.fer.opp.pizzeriasystem.services.PizzaOrderService</node>
+    <node x="244.25" y="267.0">hr.fer.opp.pizzeriasystem.services.ReportService</node>
+    <node x="-86.0" y="545.0">hr.fer.opp.pizzeriasystem.services.PizzaService</node>
+    <node x="282.0" y="882.0">hr.fer.opp.pizzeriasystem.repository.IngredientRepository</node>
+    <node x="584.0" y="609.0">hr.fer.opp.pizzeriasystem.services.LoyaltyProgramService</node>
+    <node x="249.0" y="623.0">hr.fer.opp.pizzeriasystem.services.GradeService</node>
+    <node x="902.25" y="267.0">hr.fer.opp.pizzeriasystem.services.UserService</node>
+    <node x="1247.5" y="44.0">hr.fer.opp.pizzeriasystem.repository.UserRepository</node>
+    <node x="-84.0" y="413.0">hr.fer.opp.pizzeriasystem.repository.PizzaRepository</node>
+    <node x="21.25" y="66.0">hr.fer.opp.pizzeriasystem.repository.PizzaOrderRepository</node>
+    <node x="0.0" y="882.0">hr.fer.opp.pizzeriasystem.services.SecurityService</node>
+    <node x="693.8708333333334" y="0.0">hr.fer.opp.pizzeriasystem.repository.OrderRepository</node>
+    <node x="248.0" y="470.0">hr.fer.opp.pizzeriasystem.repository.GradeRepository</node>
+    <node x="573.0" y="495.0">hr.fer.opp.pizzeriasystem.repository.LoyaltyProgramRepository</node>
+    <node x="314.5" y="984.0">hr.fer.opp.pizzeriasystem.services.IngredientService</node>
+    <node x="0.0" y="1006.0">hr.fer.opp.pizzeriasystem.services.SecurityServiceImpl</node>
+    <node x="1172.25" y="245.0">hr.fer.opp.pizzeriasystem.services.EmployeeService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="hr.fer.opp.pizzeriasystem.services.UserDetailsServiceImpl" target="hr.fer.opp.pizzeriasystem.repository.UserRepository">
+      <point x="0.0" y="-26.0" />
+      <point x="1612.75" y="214.0" />
+      <point x="1470.8333333333333" y="214.0" />
+      <point x="89.33333333333326" y="48.0" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.UserService" target="hr.fer.opp.pizzeriasystem.repository.UserRepository">
+      <point x="62.5" y="-92.0" />
+      <point x="1089.75" y="214.0" />
+      <point x="1292.1666666666665" y="214.0" />
+      <point x="-89.33333333333337" y="48.0" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.PizzaOrderService" target="hr.fer.opp.pizzeriasystem.repository.PizzaOrderRepository">
+      <point x="0.0" y="-26.0" />
+      <point x="-70.75" y="26.0" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.EmployeeService" target="hr.fer.opp.pizzeriasystem.repository.UserRepository">
+      <point x="69.75" y="-114.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.SecurityServiceImpl" target="hr.fer.opp.pizzeriasystem.services.SecurityService">
+      <point x="0.0" y="-37.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.PizzaService" target="hr.fer.opp.pizzeriasystem.repository.PizzaRepository">
+      <point x="0.0" y="-81.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.ReportService" target="hr.fer.opp.pizzeriasystem.repository.OrderRepository">
+      <point x="100.33333333333331" y="-92.0" />
+      <point x="495.0833333333333" y="204.0" />
+      <point x="733.9958333333334" y="204.0" />
+      <point x="-120.375" y="92.0" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.LoyaltyProgramService" target="hr.fer.opp.pizzeriasystem.repository.LoyaltyProgramRepository">
+      <point x="0.0" y="-70.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.IngredientService" target="hr.fer.opp.pizzeriasystem.repository.IngredientRepository">
+      <point x="0.0" y="-37.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.GradeService" target="hr.fer.opp.pizzeriasystem.repository.GradeRepository">
+      <point x="0.0" y="-70.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.EmployeeService" target="hr.fer.opp.pizzeriasystem.repository.OrderRepository">
+      <point x="-69.75" y="-114.0" />
+      <point x="1242.0" y="204.0" />
+      <point x="974.7458333333334" y="204.0" />
+      <point x="120.375" y="92.0" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.ReportService" target="hr.fer.opp.pizzeriasystem.repository.PizzaOrderRepository">
+      <point x="-100.33333333333331" y="-92.0" />
+      <point x="294.4166666666667" y="214.0" />
+      <point x="233.5" y="214.0" />
+      <point x="70.75" y="26.0" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.OrderService" target="hr.fer.opp.pizzeriasystem.repository.OrderRepository">
+      <point x="0.0" y="-125.0" />
+      <point x="723.75" y="214.0" />
+      <point x="814.2458333333334" y="214.0" />
+      <point x="-40.125" y="92.0" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.ReportService" target="hr.fer.opp.pizzeriasystem.repository.ReportRepository">
+      <point x="0.0" y="-92.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="hr.fer.opp.pizzeriasystem.services.UserService" target="hr.fer.opp.pizzeriasystem.repository.OrderRepository">
+      <point x="-62.5" y="-92.0" />
+      <point x="964.75" y="214.0" />
+      <point x="894.4958333333334" y="214.0" />
+      <point x="40.125" y="92.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="832.0" y="360.5" />
+  <SelectedNodes>
+    <node>hr.fer.opp.pizzeriasystem.services.LoyaltyProgramService</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
